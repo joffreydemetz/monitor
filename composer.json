@@ -1,0 +1,28 @@
+{
+    "name": "jdz/spy",
+    "type": "library",
+    "description": "JDZ html formatter for debug",
+    "keywords": ["JDZ","utilities","html"],
+    "homepage": "https://jdz.joffreydemetz.com/spy/",
+    "version": "1.0.0",
+    "license": "MIT",
+    
+    "authors": [
+        {
+            "name": "Joffrey Demetz",
+            "email": "joffrey.demetz@gmail.com",
+            "homepage": "https://joffreydemetz.com",
+            "role": "Lead"
+        }
+    ],
+
+    "suggest": {
+        "jdz/mailer": "To send the content by mail."
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "JDZ\\Spy\\": "src"
+        }
+    }
+}
