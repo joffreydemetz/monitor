@@ -8,7 +8,6 @@
 namespace JDZ\Spy;
 
 use JDZ\Spy\SpyHtml;
-use JDZ\Mailer\Mailer;
 
 /**
  * Spy
@@ -18,9 +17,6 @@ use JDZ\Mailer\Mailer;
 class Spy
 {
   public SpyHtml $html;
-  public string $label = '';
-  public string $subject = '';
-  public array $recipients = [];
   
   protected array $data = [];
   
