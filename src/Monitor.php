@@ -5,24 +5,26 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace JDZ\Spy;
+namespace JDZ\Monitor;
 
-use JDZ\Spy\SpyHtml;
+use JDZ\Monitor\MonitorHtml;
 
 /**
- * Spy
+ * Monitor
+ * used to export infos into HTML content
+ * for debug or info printing to screen or sending it by mail
  * 
  * @author Joffrey Demetz <joffrey.demetz@gmail.com>
  */
-class Spy
+class Monitor
 {
-  public SpyHtml $html;
+  public MonitorHtml $html;
   
   protected array $data = [];
   
   public function __construct()
   {
-    $this->html = new SpyHtml();
+    $this->html = new MonitorHtml();
   }
   
   public function __toString(): string

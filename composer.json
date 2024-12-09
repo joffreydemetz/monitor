@@ -1,9 +1,9 @@
 {
-    "name": "jdz/spy",
+    "name": "jdz/monitor",
     "type": "library",
     "description": "JDZ html formatter for debug",
     "keywords": ["JDZ","utilities","html"],
-    "homepage": "https://jdz.joffreydemetz.com/spy/",
+    "homepage": "https://jdz.joffreydemetz.com/monitor/",
     "version": "1.0.0",
     "license": "MIT",
     
@@ -22,7 +22,7 @@
     
     "autoload": {
         "psr-4": {
-            "JDZ\\Spy\\": "src"
+            "JDZ\\Monitor\\": "src"
         }
     }
 }

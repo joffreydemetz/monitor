@@ -5,14 +5,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace JDZ\Spy;
+namespace JDZ\Monitor;
 
 /**
  * Html
  * 
  * @author Joffrey Demetz <joffrey.demetz@gmail.com>
  */
-class SpyHtml
+class MonitorHtml
 {
   public function box(string|array $content, string $bgColor='#F9F9F9', string $fgColor='#121212'): string
   {
