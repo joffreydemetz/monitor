@@ -2,6 +2,7 @@
     "name": "jdz/monitor",
     "type": "library",
     "description": "JDZ html formatter for debug",
+    "minimum-stability": "dev",
     "keywords": [
         "JDZ",
         "utilities",
