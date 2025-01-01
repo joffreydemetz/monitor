@@ -18,6 +18,9 @@
             "role": "Lead"
         }
     ],
+    "require": {
+        "php": ">=8.1"
+    },
     "suggest": {
         "jdz/mailer": "To send the monitoring by mail."
     },
