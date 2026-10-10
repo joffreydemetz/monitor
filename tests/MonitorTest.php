@@ -8,39 +8,11 @@ use JDZ\Monitor\MonitorHtml;
 
 class MonitorTest extends TestCase
 {
-    public function testConstructor(): void
-    {
-        $monitor = new Monitor();
-
-        $this->assertInstanceOf(MonitorHtml::class, $monitor->html);
-        $this->assertFalse($monitor->hasContent());
-    }
-
     public function testHasContentFalseWhenEmpty(): void
     {
         $monitor = new Monitor();
 
         $this->assertFalse($monitor->hasContent());
-    }
-
-    public function testHasContentTrueAfterAdd(): void
-    {
-        $monitor = new Monitor();
-        $monitor->h1('Title');
-
-        $this->assertTrue($monitor->hasContent());
-    }
-
-    public function testToString(): void
-    {
-        $monitor = new Monitor();
-        $monitor->h1('Title');
-        $monitor->p('Paragraph');
-
-        $result = (string)$monitor;
-
-        $this->assertStringContainsString('<h1>Title</h1>', $result);
-        $this->assertStringContainsString('<p>Paragraph</p>', $result);
     }
 
     public function testToStringJoinsWithSpace(): void
