@@ -102,7 +102,7 @@ if ($monitor->hasContent()) {
 
 ### Sending by Email
 
-Pair with `jdz/mailer` to email the report:
+Pair with `jdz/mailer` (^2.0) to email the report — a sender and a domain are required:
 
 ```php
 use JDZ\Monitor\Monitor;
@@ -113,6 +113,9 @@ $monitor->h1('Cron Report');
 $monitor->p('Everything OK');
 
 $mail = new Mailer();
+$mail->domain = 'example.com';
+$mail->dsn = $_ENV['MAILER_DSN'];   // jdz/mailer 2.x: any symfony/mailer DSN (or setSMTP([...]))
+$mail->setFrom('cron@example.com', 'Cron');
 $mail->setContent([
     'isHtml' => true,
     'content' => (string)$monitor,
